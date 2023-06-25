@@ -11,12 +11,24 @@ public class Directorycall extends Directorysfunction{
            System.out.println("\n1)add \n2)delete \n3)search \n4)display \n5)exit \nenter the choice");
            int ch = bn.nextInt();
            switch (ch) {
-               case 1 -> add();
-               case 2 -> delete();
-               case 3 -> search();
-               case 4 -> display();
-               case 5 -> System.exit(0);
-               default -> System.out.println("enter the corect choice bro...");
+               case 1:
+                   add();
+                   break;
+               case 2:
+                   delete();
+                   break;
+               case 3:
+                   search();
+                   break;
+               case 4:
+                   display();
+                   break;
+               case 5:
+                   System.exit(0);
+                   break;
+               default:
+                   System.out.println("enter the corect choice bro...");
+                   break;
            }
        }
    }
